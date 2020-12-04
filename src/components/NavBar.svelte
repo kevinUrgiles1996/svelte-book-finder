@@ -1,11 +1,13 @@
 <script>
 </script>
 
-<nav>
-  <ul>
-    <li><h1>Book Finder</h1></li>
-  </ul>
-</nav>
+<div class="nav-bar">
+  <nav>
+    <ul>
+      <li><h1>Book Finder</h1></li>
+    </ul>
+  </nav>
+</div>
 
 <style>
 

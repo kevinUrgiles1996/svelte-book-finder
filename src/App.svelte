@@ -4,11 +4,11 @@
   import BookContainer from './components/BookContainer.svelte';
 </script>
 
-  <div class="app">
-    <NavBar />
-    <SearchBar />
-    <BookContainer />
-  </div>
+<div class="app">
+  <NavBar />
+  <SearchBar />
+  <BookContainer />
+</div>
 
 <style>
 	:global(*){

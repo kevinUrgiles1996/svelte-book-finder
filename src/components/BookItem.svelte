@@ -13,8 +13,15 @@
   }
 
 </script>
+
+<div class="book-item">
+  <h3 class="title">{title.substring(0,20)}</h3>
+  <img src={thumbnailUrl} alt="cover">
+  <a class="preview-link" href={previewLink} target="_blank" >Preview Link</a>
+</div>
+
 <style>
-  .book{
+  .book-item{
     height: 300px;
     padding: 10px;
     box-shadow: 2px 2px 10px black;
@@ -48,8 +55,3 @@
   }
 
 </style>
-<div class="book">
-  <h3 class="title">{title.substring(0,20)}</h3>
-  <img src={thumbnailUrl} alt="cover">
-  <a class="preview-link" href={previewLink} target="_blank" >Preview Link</a>
-</div>
