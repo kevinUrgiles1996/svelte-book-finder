@@ -3,6 +3,7 @@
 
   let text = '';
   let alertMessage = '';
+  let searchInput;
 
   function handleSubmit(event){
     event.preventDefault();
@@ -29,6 +30,7 @@
   function clearSearch(){
     text = '';
     books.set([]);
+    searchInput.focus();
   }
 
 </script>
@@ -39,7 +41,7 @@
     </div>
   {/if}
   <form on:submit={handleSubmit}>
-    <input type="text" placeholder="Type a title, author or editorial" bind:value={text} >
+    <input type="text" placeholder="Type a title, author or editorial" bind:value={text} bind:this={searchInput} >
     <button class="search-button" type="submit">Search</button>
     {#if $books.length > 0}
       <button class="clear-button" on:click={clearSearch} >Clear Search</button>
