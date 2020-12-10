@@ -20,6 +20,7 @@
   }
 
   async function searchBooks(){
+    books.set([]);
     loading.set(true);
     const res = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${text}`);
     const data = await res.json();
